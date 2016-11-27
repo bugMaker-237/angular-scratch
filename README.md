@@ -1,3 +1,5 @@
+###This is a small starter app made from scratch to learn more about angularJS, angular material and ES6
+
 ##Running the code
 To run the sample, open a command prompt and execute the following commands:
 
