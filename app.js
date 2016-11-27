@@ -1,11 +1,6 @@
 var express = require('express');
-let app = express();
-var dir = require('node-dir');
+app = express();
 
-dir.subdirs(__dirname, function(err, subdirs) {
-    if (err) throw err;
-    console.log(subdirs);
-})
 app.use(express.static('.'));
 app.use(express.static('app'));
 app.get('/', (req,res) => {
