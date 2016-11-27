@@ -1,0 +1,34 @@
+{
+  "name": "angular-scratch",
+  "version": "0.0.1",
+  "description": "An angular based app",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "~1.5",
+    "angular-animate": "~1.5.8",
+    "angular-aria": "~1.5.8",
+    "angular-chart.js": "^1.0.3",
+    "angular-component": "0.0.6",
+    "angular-material": "~1.1.1",
+    "angular-messages": "~1.5.8",
+    "angular-route": "^1.5.9",
+    "angular-tree-view": "^1.0.5",
+    "loaddir": "^2.1.4",
+    "node-dir": "^0.1.16",
+    "traceur": "0.0.79"
+  },
+  "devDependencies": {
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-express": "^0.1.4",
+    "traceur": "0.0.79",
+    "webpack": "^1.13.3"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run gulp"
+  },
+  "author": "Yamsi Bchamgoue Etienne",
+  "license": "MIT"
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./node_modules/angular-material/angular-material.css">
+        <link rel="stylesheet" href="./app/styles/main.css">
+    </head>
+    <body layout="column" >
+        <div layout="row" flex>
+            <!-- Sidenav(left) -->
+            
+            <side-nav></side-nav>
+
+            <!-- Right -->
+
+            <div layout="column" flex>
+
+                <!--ToolBar-->
+
+                <tool-bar layout="row"></tool-bar>
+
+                <!--MainContent-->
+
+                <md-content ng-view layout-padding>
+                </md-content>
+
+            </div>
+        </div>
+        
+
+        <!-- Container #2 -->
+        
+
+        <script src="./node_modules/angular/angular.min.js"></script>
+        <script src="./node_modules/chart.js/dist/chart.min.js"></script>
+        <!--/*<script src="./node_modules/angular-route/angular-route.js"></script>*/-->
+        <script src="./node_modules/angular-messages/angular-messages.min.js"></script>
+        <script src="./node_modules/angular-aria/angular-aria.min.js"></script>
+        <script src="./node_modules/angular-route/angular-route.min.js"></script>
+        <script src="./node_modules/angular-animate/angular-animate.min.js"></script>
+        <script src="./node_modules/angular-material/angular-material.min.js"></script>
+        <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+        <script src="./node_modules/traceur/bin/traceur.js"></script>
+        <script>
+            traceur.options.experimental = true;
+            new traceur.WebPageTranscoder(document.location.href).run();
+        </script>
+        <script type="module" src="./app/boot.js"></script>
+    </body>
+</html>
